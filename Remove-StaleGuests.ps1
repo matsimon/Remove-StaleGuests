@@ -113,8 +113,7 @@ Identifying Obsolete Guest User Accounts in an Office 365 Tenant - https://www.p
 
 NOTE! Script Requires the MSAL.PS Module. Run - Install-Module -Name MSAL.PS - https://www.powershellgallery.com/packages/MSAL.PS
 
-IMPORTANT! Hey! Graph API Beta is used. You must use user creds or an Azure Application which is 
-granted the following permissions. 
+IMPORTANT! Hey! You must use user credentials or an Azure Application which is granted the following permissions:
     
     AuditLog.Read.All  - Access LastLogon information
     Directory.Read.All - Fix auditlog bug
@@ -123,7 +122,7 @@ granted the following permissions.
     Quickstart: https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
 
 IMPORTANT! The use of client secret is not recommended in production. It is highly recommended that you use 
-Certifcate based authenication. Graph API Beta is also not recommended in production.
+Certifcate based authenication.
 
 ANOTHER NOTE! MSAL.PS Module: 4.37.0.0 was bombing with the Az Module. You may receive the error: 
 "The property 'Authority' cannot be found on this object." https://github.com/AzureAD/MSAL.PS/issues/45
